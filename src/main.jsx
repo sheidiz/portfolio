@@ -12,6 +12,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <App />
       </LanguageProvider>
     </DarkModeProvider>
-    ,
   </React.StrictMode>,
 );
