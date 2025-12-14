@@ -5,9 +5,9 @@ import cssIcon from "./../assets/icons/css.png";
 import jsIcon from "./../assets/icons/javascript.png";
 import reactIcon from "./../assets/icons/react.png";
 import viteIcon from "./../assets/icons/vite.png";
-import bootstrapIcon from "./../assets/icons/bootstrap.png";
 import tailwindIcon from "./../assets/icons/tailwind.png";
 import figmaIcon from "./../assets/icons/figma.png";
+import goIcon from "./../assets/icons/go.png";
 import javaIcon from "./../assets/icons/java.png";
 import springIcon from "./../assets/icons/spring.png";
 import gitIcon from "./../assets/icons/git.png";
@@ -25,11 +25,11 @@ const tools = {
     { name: "JavaScript", icon: jsIcon },
     { name: "React", icon: reactIcon },
     { name: "Vite", icon: viteIcon },
-    { name: "Bootstrap", icon: bootstrapIcon },
     { name: "Tailwind", icon: tailwindIcon },
     { name: "Figma", icon: figmaIcon },
   ],
   backend: [
+    { name: "Go", icon: goIcon },
     { name: "Java", icon: javaIcon },
     { name: "Spring", icon: springIcon },
     { name: "JUnit", icon: junitIcon },
@@ -66,9 +66,9 @@ const Languages = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <h3 className="text-xl font-medium">{sectionTitle("Frontend")}</h3>
+        <h3 className="text-xl font-medium">{sectionTitle("Backend")}</h3>
         <ul className="mt-4 flex flex-wrap gap-4">
-          {tools.frontend.map((tool) => (
+          {tools.backend.map((tool) => (
             <ToolItem key={tool.name} {...tool} />
           ))}
         </ul>
@@ -79,9 +79,9 @@ const Languages = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <h3 className="text-xl font-medium">{sectionTitle("Backend")}</h3>
+        <h3 className="text-xl font-medium">{sectionTitle("Frontend")}</h3>
         <ul className="mt-4 flex flex-wrap gap-3 sm:gap-4">
-          {tools.backend.map((tool) => (
+          {tools.frontend.map((tool) => (
             <ToolItem key={tool.name} {...tool} />
           ))}
         </ul>

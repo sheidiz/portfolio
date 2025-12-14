@@ -60,8 +60,8 @@ const Experience = () => {
                 <FaRegCircleCheck className="absolute top-0 z-10 -ml-3.5 h-7 w-7 rounded-full bg-secondary text-light" />
                 <div className="ml-6">
                   <h4 className="font-semibold text-light">{item.title}</h4>
-                  <p className="mt-1 max-w-screen-sm text-sm text-light/80">
-                    {item.institution}
+                  <p className="mt-1 text-sm text-light/80 font-bold">
+                    {item.company}
                   </p>
                   <ul className="ml-3 mt-1 max-w-screen-sm list-disc text-sm text-light/60">
                     {item.description.map((l, i) => (
