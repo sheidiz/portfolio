@@ -10,7 +10,7 @@ body {
 }
 
 /* when dark class is on the wrapper div */
-#app-root.dark {
+body.dark {
   --dot-bg: #26272b;
   --dot-color: rgba(242, 242, 251, 0.5);
   --dot-size: 1px;
