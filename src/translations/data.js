@@ -13,10 +13,10 @@ const translations = {
       experience: "Experience",
       projects: "Projects",
     },
-    title: "Java Full Stack Developer",
+    title: "Backend Software Developer",
     description: [
-      "Looking out for my first job as a Developer, where I can contribute with my skills and knowledge in a dynamic workplace.",
-      "I enjoy facing new challenges and colaborate on projects that generate a positive impact on people's lives. I'm open to new oportunities and I'm excited in exploring how can I contribute to innovative teams.",
+      "I am a Software Developer with a backend orientation. Currently, I work at Mercado Pago, where I use Golang and collaborate within a Scrum-based team.",
+      "My day-to-day work involves backend development tasks, collaboration with other developers, and using observability tools such as Datadog and Kibana. I am learning about payment systems and backend development practices in production environments.",
     ],
     education: [
       {
@@ -46,13 +46,24 @@ const translations = {
     ],
     work: [
       {
+        title: "Software Developer (Backend)",
+        company: "Mercado Pago",
+        description: [
+          "Backend development using Golang",
+          "Team collaboration in a Scrum environment",
+          "Use of GitHub and continuous integration pipelines",
+          "Basic monitoring and analysis with Datadog and Kibana",
+          "Continuous learning about the payments domain",
+        ],
+        dates: "December 2024 - Present",
+      },
+      {
         title: "Full Stack Developer (Tech Training)",
         company: "Igrowker - Acelerando Juniors IT",
         description: [
           "Participated in a 5-week tech training with Igrowker, collaborating with a cross-functional team (frontend, backend, UX/UI, QA).",
           "Developed an MVP for a digital banking and virtual wallet solution to improve financial access in rural areas.",
           "Contributed to frontend (React, ViteJS, Tailwind) and backend (Java, Spring) development.",
-          "Implemented security features, authentication, and encryption.",
           "Worked with GitHub Projects, had weekly meetings, and deployed apps on Railway (backend) and Netlify (frontend).",
         ],
         dates: "September 2024 - October 2024",
@@ -142,10 +153,10 @@ const translations = {
       experience: "Experiencia",
       projects: "Proyectos",
     },
-    title: "Desarrolladora Full Stack Java",
+    title: "Desarrolladora de Software Backend",
     description: [
-      "En búsqueda de mi primer empleo como desarrolladora, donde pueda contribuir con mis habilidades y conocimientos en un entorno laboral dinámico.",
-      "Me entusiasma enfrentarme a nuevos desafíos y colaborar en proyectos que generen un impacto positivo. Abierta a nuevas oportunidades, estoy ansiosa por explorar cómo puedo aportar valor a equipos innovadores.",
+      "Soy Software Developer con orientación a backend. Actualmente trabajo en Mercado Pago, donde utilizo Golang y formo parte de un equipo que trabaja con metodología Scrum.",
+      "En mi día a día participo en el desarrollo backend, colaboro con otros desarrolladores y utilizo herramientas de observabilidad como Datadog y Kibana. Estoy aprendiendo sobre el funcionamiento general de los sistemas de pagos y buenas prácticas en entornos productivos."
     ],
     education: [
       {
@@ -175,13 +186,24 @@ const translations = {
     ],
     work: [
       {
+        title: "Software Developer (Backend)",
+        company: "Mercado Pago",
+        description: [
+          "Desarrollo backend utilizando Golang",
+          "Trabajo en equipo bajo metodología Scrum",
+          "Uso de GitHub y pipelines de integración continua",
+          "Monitoreo y análisis básico con Datadog y Kibana",
+          "Aprendizaje continuo sobre el dominio de pagos",
+        ],
+        dates: "Diciembre 2024 - Presente",
+      },
+      {
         title: "Desarrolladora Full Stack (Tech Training)",
         company: "Igrowker - Acelerando Juniors IT",
         description: [
           "Participé en un entrenamiento técnico de 5 semanas con Igrowker, colaborando con un equipo multidisciplinario (frontend, backend, UX/UI, QA).",
           "Desarrollamos un MVP para una solución de banca digital y billetera virtual para mejorar el acceso financiero en zonas rurales.",
           "Contribuí al desarrollo del frontend (React, ViteJS, Tailwind) y backend (Java, Spring).",
-          "Implementé funciones de seguridad, autenticación y cifrado.",
           "Trabaje con GitHub Projects, reuniones semanales y realizamos los despliegues en Railway (backend) y Netlify (frontend).",
         ],
         dates: "Septiembre 2024 - Octubre 2024",
