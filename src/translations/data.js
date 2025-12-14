@@ -15,7 +15,7 @@ const translations = {
     },
     title: "Backend Software Developer",
     description: [
-      "I am a Software Developer with a backend orientation. Currently, I work at Mercado Pago, where I use Golang and collaborate within a Scrum-based team.",
+      "I am a Software Developer with a backend orientation. Currently, I work at Mercado Pago, where I use Go and collaborate within a Scrum-based team.",
       "My day-to-day work involves backend development tasks, collaboration with other developers, and using observability tools such as Datadog and Kibana. I am learning about payment systems and backend development practices in production environments.",
     ],
     education: [
@@ -49,7 +49,7 @@ const translations = {
         title: "Software Developer (Backend)",
         company: "Mercado Pago",
         description: [
-          "Backend development using Golang",
+          "Backend development using Go",
           "Team collaboration in a Scrum environment",
           "Use of GitHub and continuous integration pipelines",
           "Basic monitoring and analysis with Datadog and Kibana",
@@ -155,7 +155,7 @@ const translations = {
     },
     title: "Desarrolladora de Software Backend",
     description: [
-      "Soy Software Developer con orientación a backend. Actualmente trabajo en Mercado Pago, donde utilizo Golang y formo parte de un equipo que trabaja con metodología Scrum.",
+      "Soy Software Developer con orientación a backend. Actualmente trabajo en Mercado Pago, donde utilizo Go y formo parte de un equipo que trabaja con metodología Scrum.",
       "En mi día a día participo en el desarrollo backend, colaboro con otros desarrolladores y utilizo herramientas de observabilidad como Datadog y Kibana. Estoy aprendiendo sobre el funcionamiento general de los sistemas de pagos y buenas prácticas en entornos productivos."
     ],
     education: [
@@ -189,7 +189,7 @@ const translations = {
         title: "Software Developer (Backend)",
         company: "Mercado Pago",
         description: [
-          "Desarrollo backend utilizando Golang",
+          "Desarrollo backend utilizando Go",
           "Trabajo en equipo bajo metodología Scrum",
           "Uso de GitHub y pipelines de integración continua",
           "Monitoreo y análisis básico con Datadog y Kibana",
