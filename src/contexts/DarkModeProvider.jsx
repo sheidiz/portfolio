@@ -1,15 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { DarkModeContext } from "./DarkModeContext";
 
-const getInitialTheme = () => {
+const THEME_STORAGE_KEY = "theme";
+
+const getStoredTheme = () => {
   try {
-    const savedTheme = localStorage.getItem("theme");
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
 
     if (savedTheme === "dark" || savedTheme === "light") {
-      return savedTheme === "dark";
+      return savedTheme;
     }
+  } catch {
+    // Persistence is optional.
+  }
 
+  return null;
+};
+
+const getSystemTheme = () => {
+  try {
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   } catch {
     return false;
@@ -17,20 +27,40 @@ const getInitialTheme = () => {
 };
 
 export const DarkModeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(getInitialTheme);
+  const [themePreference, setThemePreference] = useState(getStoredTheme);
+  const [systemPrefersDark, setSystemPrefersDark] = useState(getSystemTheme);
+  const isDarkMode = themePreference
+    ? themePreference === "dark"
+    : systemPrefersDark;
 
   useEffect(() => {
-    document.body.classList.toggle("dark", isDarkMode);
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const updateSystemTheme = (event) => setSystemPrefersDark(event.matches);
+
+    mediaQuery.addEventListener("change", updateSystemTheme);
+
+    return () => mediaQuery.removeEventListener("change", updateSystemTheme);
+  }, []);
+
+  useLayoutEffect(() => {
+    document.documentElement.classList.toggle("dark", isDarkMode);
+    document.documentElement.style.colorScheme = isDarkMode ? "dark" : "light";
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    if (!themePreference) {
+      return;
+    }
 
     try {
-      localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+      localStorage.setItem(THEME_STORAGE_KEY, themePreference);
     } catch {
       // Theme preference persistence is optional.
     }
-  }, [isDarkMode]);
+  }, [themePreference]);
 
   const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode);
+    setThemePreference(isDarkMode ? "light" : "dark");
   };
 
   return (

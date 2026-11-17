@@ -9,6 +9,25 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      (() => {
+        let savedTheme = null;
+
+        try {
+          savedTheme = localStorage.getItem("theme");
+        } catch {
+          // Theme preference persistence is optional.
+        }
+
+        const isDarkMode =
+          savedTheme === "dark" ||
+          (savedTheme !== "light" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+        document.documentElement.classList.toggle("dark", isDarkMode);
+        document.documentElement.style.colorScheme = isDarkMode ? "dark" : "light";
+      })();
+    </script>
     <title>Sheila Diz - Full Stack Java Developer</title>
   </head>
   <body>
