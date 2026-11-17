@@ -1,6 +1,5 @@
-import React from "react";
 import translations from "../../translations/data";
-import { useLanguage } from "../../contexts/LanguageContext";
+import { useLanguage } from "../../contexts/useLanguage";
 
 import DarkModeToggleButton from "./DarkModeToggleButton";
 import LanguageToggleButton from "./LanguageToggleButton";

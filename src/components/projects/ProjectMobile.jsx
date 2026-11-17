@@ -1,7 +1,18 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaFigma, FaGithub, FaYoutube } from "react-icons/fa";
 import { MdLink } from "react-icons/md";
+import PropTypes from "prop-types";
+
+const projectPropType = PropTypes.shape({
+  description: PropTypes.string.isRequired,
+  figma: PropTypes.string,
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  repository: PropTypes.string,
+  technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  title: PropTypes.string.isRequired,
+  video: PropTypes.string,
+  web: PropTypes.string,
+});
 
 export const ProjectMobile = ({ project }) => {
   const {
@@ -97,4 +108,8 @@ export const ProjectMobile = ({ project }) => {
       </div>
     </motion.div>
   );
+};
+
+ProjectMobile.propTypes = {
+  project: projectPropType.isRequired,
 };

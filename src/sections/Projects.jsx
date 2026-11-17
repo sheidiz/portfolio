@@ -1,9 +1,7 @@
-import React from "react";
-import { useLanguage } from "../contexts/LanguageContext";
+import { useLanguage } from "../contexts/useLanguage";
 import translations from "../translations/data";
 import { ProjectMobile } from "../components/projects/ProjectMobile";
 import { ProjectDesktop } from "../components/projects/ProjectDesktop";
-import BentoContainer from "../components/BentoContainer";
 
 const Projects = () => {
   const { language } = useLanguage();
