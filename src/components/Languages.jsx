@@ -1,5 +1,5 @@
-import React from "react";
-import { useLanguage } from "../contexts/LanguageContext";
+import { useLanguage } from "../contexts/useLanguage";
+import PropTypes from "prop-types";
 import htmlIcon from "./../assets/icons/html.png";
 import cssIcon from "./../assets/icons/css.png";
 import jsIcon from "./../assets/icons/javascript.png";
@@ -52,6 +52,11 @@ const ToolItem = ({ name, icon }) => (
     {name}
   </li>
 );
+
+ToolItem.propTypes = {
+  icon: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 const Languages = () => {
   const { language } = useLanguage();

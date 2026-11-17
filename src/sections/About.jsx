@@ -1,6 +1,5 @@
-import React from "react";
 import translations from "../translations/data";
-import { useLanguage } from "../contexts/LanguageContext";
+import { useLanguage } from "../contexts/useLanguage";
 import Perfil from "../assets/Perfil.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";

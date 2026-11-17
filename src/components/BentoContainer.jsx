@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const BentoContainer = ({
   className,
@@ -18,6 +18,14 @@ const BentoContainer = ({
       {children}
     </motion.div>
   );
+};
+
+BentoContainer.propTypes = {
+  animate: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.bool]),
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  initial: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.bool]),
+  transition: PropTypes.object,
 };
 
 export default BentoContainer;
