@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { DarkModeContext } from "./contexts/DarkModeContext";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/layout/Navbar";
 import ScrollToTopButton from "./components/layout/ScrollToTopButton";
@@ -8,11 +6,9 @@ import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 
 function App() {
-  const { isDarkMode } = useContext(DarkModeContext);
-
   return (
     <HelmetProvider>
-      <div className={isDarkMode ? "dark" : ""}>
+      <>
         <Helmet>
           <title>Sheila Diz - Full Stack Java Developer</title>
           <meta
@@ -34,7 +30,7 @@ function App() {
           <Projects />
           <ScrollToTopButton />
         </main>
-      </div>
+      </>
     </HelmetProvider>
   );
 }
