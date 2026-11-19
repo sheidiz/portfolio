@@ -81,6 +81,7 @@ const translations = {
     ],
     projects: [
       {
+        presentation: "mobile",
         title: "Nativo",
         description:
           "Fintech platform that facilitates transactions in rural communities. It allows to make payments using QR codes, request microcredit, and receive/make donations to other Nativo users.",
@@ -105,6 +106,7 @@ const translations = {
         figma: "",
       },
       {
+        presentation: "desktop",
         title: "CheLaburo",
         description:
           "Platform for hiring home services in Buenos Aires, Argentina. It allows users to publish and search for available services, connecting those who need services with local providers.",
@@ -127,6 +129,7 @@ const translations = {
           "https://www.figma.com/design/XW6XPeNF3aNehPdoMKTGUn/CheLaburo----Coding-Dojo-Project?t=aU71xOYXfDmADk7H-0",
       },
       {
+        presentation: "desktop",
         title: "WikiNook",
         description:
           "My first React App of the Animal Crossing game, powered by the Nookipedia API. Features filtering, search, and pagination for enhanced user experience.",
@@ -221,6 +224,7 @@ const translations = {
     ],
     projects: [
       {
+        presentation: "mobile",
         title: "Nativo",
         description:
           "Plataforma fintech que facilita las transacciones en comunidades rurales. Permite realizar pagos por QR, solicitar microcréditos y dar/recibir donaciones de otros usuarios de Nativo.",
@@ -245,6 +249,7 @@ const translations = {
         figma: "",
       },
       {
+        presentation: "desktop",
         title: "CheLaburo",
         description:
           "Plataforma para la contratación de servicios en Buenos Aires, Argentina. Permite a los usuarios publicar y buscar servicios, conectando a quienes necesitan servicios con proveedores locales.",
@@ -267,6 +272,7 @@ const translations = {
           "https://www.figma.com/design/XW6XPeNF3aNehPdoMKTGUn/CheLaburo----Coding-Dojo-Project?t=aU71xOYXfDmADk7H-0",
       },
       {
+        presentation: "desktop",
         title: "WikiNook",
         description:
           "Mi primer aplicación en React sobre el juego Animal Crossing, utilizando la API de Nookipedia. Incluye filtros, búsqueda y paginación para mejorar la experiencia del usuario.",
